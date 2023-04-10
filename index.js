@@ -26,13 +26,13 @@ export default function Quiz() {
     <div className='container'>
       {showPontuacao ? (
         <div className='pontuacao'>
-          <span>Sua pontuação é {pontos} de {questions.length}</span>
+          <span><h1> Sua pontuação é {pontos} de {questions.length} </h1></span>
             <ReloadButton />
         </div>) : (
         <>
           <div className='infoPerguntas'>
             <div className="contagemPerguntas">
-              <span>Pergunta {perguntaAtual + 1}/{questions.length}</span>
+              <span><h4>Pergunta {perguntaAtual + 1}/{questions.length}</h4></span>
             </div >
             <div className="pergunta">{questions[perguntaAtual].pergunta}</div>
           </div >

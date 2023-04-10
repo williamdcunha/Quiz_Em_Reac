@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import ReloadButton from '../ReloadButton';
 import { Perguntas } from '../../questions/perguntas';
-import ReloadButton from 'handleClick'
 
 export default function Quiz() {
   const questions = Perguntas ?? []
@@ -27,7 +27,7 @@ export default function Quiz() {
       {showPontuacao ? (
         <div className='pontuacao'>
           <span>Sua pontuação é {pontos} de {questions.length}</span>
-            </ReloadButton>
+            <ReloadButton />
         </div>) : (
         <>
           <div className='infoPerguntas'>
